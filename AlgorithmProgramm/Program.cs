@@ -8,8 +8,8 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Your Choice : \n");
-                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram");
+                Console.WriteLine("Enter Your Choice :");
+                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,6 +25,11 @@
                         Anagram anagram = new Anagram();
                         anagram.checkAnagram("heart", "earth");
                         break;
+                    case 4:
+                        PrimeNo prime = new PrimeNo();
+                        prime.Prime();
+                        break;
+
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
