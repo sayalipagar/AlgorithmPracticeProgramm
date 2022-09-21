@@ -9,7 +9,7 @@
             while (flag)
             {
                 Console.WriteLine("Enter Your Choice :");
-                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo");
+                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,12 @@
                     case 4:
                         PrimeNo prime = new PrimeNo();
                         prime.Prime();
+                        break;
+                    case 5:
+                        PrimePalinAndAnagram list = new PrimePalinAndAnagram();
+                        list.PrimeNumber();
+                       list.Palindrome();
+                      list.AnagramCheck();
                         break;
 
                     default:

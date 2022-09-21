@@ -13,7 +13,7 @@ namespace AlgorithmProgramm
             string data = File.ReadAllText(filePath);
             string[] words = data.Split(",");
             Console.WriteLine("****************\n");
-            Console.WriteLine("Enter Words To Search...");
+            Console.WriteLine("Enter Words To Search.....");
             string search = Console.ReadLine();
             foreach (var item in words)
             {
