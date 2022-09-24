@@ -9,7 +9,7 @@
             while (flag)
             {
                 Console.WriteLine("Enter Your Choice :");
-                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram\n6.StringReplace");
+                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram\n6.StringReplace\n7.BalancedParanthesis");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,6 +41,10 @@
                         replace.Validate1("your contact number is << no >>", "91 7020083651");
                         replace.Validate2("Thank you BridgeLabz << date >>", "02/02/2015");
                        break;
+                    case 7:
+                        BalancedParaenthesis paraenthesis = new BalancedParaenthesis();
+                        paraenthesis.Balanced(FILE_PATH);
+                        break;
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
