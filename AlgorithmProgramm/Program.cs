@@ -9,7 +9,7 @@
             while (flag)
             {
                 Console.WriteLine("Enter Your Choice :");
-                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram\n6.StringReplace\n7.BalancedParanthesis");
+                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram\n6.StringReplace\n7.BalancedParanthesis\n8.BankAccount");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -44,6 +44,10 @@
                     case 7:
                         BalancedParaenthesis paraenthesis = new BalancedParaenthesis();
                         paraenthesis.Balanced(FILE_PATH);
+                        break;
+                    case 8:
+                        BankAccount bankAccount = new BankAccount();
+                        bankAccount.ATMSYSTEM();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice");
