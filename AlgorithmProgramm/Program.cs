@@ -1,6 +1,6 @@
 ﻿namespace AlgorithmProgramm
 {
-    internal class Program
+    public class Program
     {
         const string FILE_PATH = @"D:\DotNetPrograms\AlgorithmPracticeProgramm\AlgorithmProgramm\Word.txt";
         static void Main(string[] args)
@@ -9,7 +9,7 @@
             while (flag)
             {
                 Console.WriteLine("Enter Your Choice :");
-                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram");
+                Console.WriteLine("1.Binary Search\n2.BubbleSort\n3.Anagram\n4.PrimeNo\n5.PrimePalindromeAnagram\n6.StringReplace");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,10 +32,15 @@
                     case 5:
                         PrimePalinAndAnagram list = new PrimePalinAndAnagram();
                         list.PrimeNumber();
-                       list.Palindrome();
-                      list.AnagramCheck();
+                        list.Palindrome();
+                        list.AnagramCheck();
                         break;
-
+                    case 6:
+                        StringReplace replace = new StringReplace();
+                        replace.Validate("Hello << name >>,we have your full name as << full name >> in our system.","abc");
+                        replace.Validate1("your contact number is << no >>", "91 7020083651");
+                        replace.Validate2("Thank you BridgeLabz << date >>", "02/02/2015");
+                       break;
                     default:
                         Console.WriteLine("Invalid Choice");
                         break;
